@@ -18,6 +18,8 @@ let score2TextContent = +score2.textContent;
 
 let player = 1;
 
+alert("Who get 100 score Firstly, it will winner!")
+
 const diceHold = () => {
 
     let hold = false;
@@ -57,10 +59,11 @@ const diceHold = () => {
                 player2.classList.toggle('player--active')
                 score1.textContent = score1TextContent + score;
                 score1TextContent += score;
-                if (score1TextContent >= 30) {
+                if (score1TextContent >= 100) {
                     player1.classList.add('player--winner');
                     btnHold.disabled = true;
                     btnRoll.disabled = true;
+                    alert("Player1 Winner")
                 }
                 player === 1 ? player = 2 : player = 1;
                 score = 0;
@@ -70,10 +73,12 @@ const diceHold = () => {
                 player1.classList.toggle('player--active')
                 score2.textContent = score2TextContent + score;
                 score2TextContent += score;
-                if (score2TextContent >= 30) {
+                if (score2TextContent >= 100) {
                     player2.classList.add('player--winner');
                     btnHold.disabled = true;
                     btnRoll.disabled = true;
+                    alert("Player2 Winner")
+
                 }
                 player === 1 ? player = 2 : player = 1;
                 score = 0;
