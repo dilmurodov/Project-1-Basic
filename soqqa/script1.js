@@ -27,7 +27,8 @@ const diceHold = () => {
         let dice = Math.trunc(Math.random() * 6) + 1;
 
         console.log(dice)
-        imgDice.src = `dice-${dice}.png`
+
+        imgDice.src = `dice-${dice}.webp`
 
         if (player === 1)
             current1.textContent = dice;
