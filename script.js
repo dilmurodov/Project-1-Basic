@@ -74,3 +74,4 @@ again.addEventListener('click', () => {
     suroq.textContent = Globalsuroq
     document.querySelector('.guess').value = '';
 })
+
